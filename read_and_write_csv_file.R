@@ -1,0 +1,21 @@
+#!/usr/bin/env Rscript
+
+library("optparse")
+
+option_list = list(
+  make_option(c("-f", "--file"), type="character", default=NULL, 
+              help="dataset file name", metavar="character"),
+  make_option(c("-o", "--out"), type="character", default="output.csv", 
+              help="output file name [default= %default]", metavar="character")
+); 
+
+opt_parser = OptionParser(option_list=option_list);
+opt = parse_args(opt_parser);
+
+if (is.null(opt$file)){
+  print_help(opt_parser)
+  stop("At least one argument must be supplied (input file).\n", call.=FALSE)
+} else {
+  df <- read.csv(opt$file)
+  write.csv(df, file=opt$out)
+}
