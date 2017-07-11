@@ -5,13 +5,14 @@ import time
 __author__ = "Pierre Navaro"
 __email__ = "pierre.navaro@univ-rennes1.fr"
 
-# PythonMultiprocessing_Example1.py
-# D. Thiebaut
+
 # Taken and adapted from
+# PythonMultiprocessing_Example1.py by D. Thiebaut
 # https://pymotw.com/2/threading/
 #
-# Python program illustrating how threads can
-# be created and started in Python
+# This python program illustrating how threads can
+# be created, started in Python and launch the same R script
+# with different input files set through the command line.
 
 import os
 import subprocess
