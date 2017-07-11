@@ -17,7 +17,7 @@ import os
 import subprocess
 import csv
 
-cwd = os.getcwd() +"/"
+
 
 
 def worker(Id):
@@ -35,7 +35,7 @@ def worker(Id):
 
     #Create the csv file from python
 
-
+    cwd = os.getcwd() +"/"
 
     with open(input_file, 'w', newline='') as csvfile:
         fwriter = csv.writer(csvfile, delimiter=' ',
@@ -61,6 +61,7 @@ if __name__ == "__main__":
         Spawns 4 processes that will run the worker function.
         Waits for the threads to finish, then stops.
         """
+    
     jobs = []
     for i in range(4):
         p = multiprocessing.Process(target=worker, args=(i,))
