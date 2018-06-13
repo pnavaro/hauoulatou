@@ -1,2 +1,4 @@
 install.packages('optparse')
 install.packages('missMDA')
+install.packages('ggplot2')
+install.packages('dplyr')
