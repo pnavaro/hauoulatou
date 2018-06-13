@@ -46,7 +46,7 @@ def worker(Id):
         fwriter.writerow(['Spam', 'Lovely Spam', 'Wonderful Spam'])
 
     output_file = "output_"+str(Id)+".csv"
-    rcmd = ["/usr/local/bin/Rscript",
+    rcmd = ["/usr/bin/Rscript",
                 "--vanilla",
                 cwd + "read_and_write_csv_file.R",
                 "-f", cwd + input_file,
