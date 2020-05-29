@@ -2,3 +2,5 @@
 *.iml
 .ipynb_checkpoints/polyglot-ds-prep-checkpoint.ipynb
 data.csv
+.ipynb_checkpoints/DataRPython-checkpoint.ipynb
+.ipynb_checkpoints/Python-R-checkpoint.py
