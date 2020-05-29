@@ -26,7 +26,7 @@ pd.set_option("display.max_rows", 8)
 # ## Transferring R data sets into Python
 
 # %% {"slideshow": {"slide_type": "fragment"}}
-%load_ext rpy2.ipython
+# %load_ext rpy2.ipython
 
 # %% [markdown] {"slideshow": {"slide_type": "fragment"}}
 # - conversions of R to pandas objects will be done automatically
