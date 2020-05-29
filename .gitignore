@@ -1,2 +1,4 @@
 *.xml
 *.iml
+.ipynb_checkpoints/polyglot-ds-prep-checkpoint.ipynb
+data.csv
